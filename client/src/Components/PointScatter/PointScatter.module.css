@@ -1,0 +1,21 @@
+.container {
+    z-index: 1000;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    pointer-events: none;
+}
+
+.container * {
+    pointer-events: all;
+}
+
+.window {
+    user-select: none;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    border: 1px solid rgb(181, 181, 181);
+}

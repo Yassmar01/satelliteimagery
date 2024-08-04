@@ -1,0 +1,11 @@
+.filesToggle {
+    z-index: 1000;
+    position: absolute;
+    bottom: 13px;
+    left: 13px;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    color: #015bde;
+    font-size: 26px;
+}

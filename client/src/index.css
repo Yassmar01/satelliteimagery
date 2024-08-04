@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img.leaflet-marker-icon {
+  margin-left: -9px !important;
+  margin-top: -28px !important;
+  width: 17.5px !important;
+  height: 28px !important;
+}
+
+img.leaflet-marker-shadow {
+  margin-left: -12px !important;
+  margin-top: -41px !important;
+}
+
+div.leaflet-popup {
+  margin-bottom: 40px!important;
+}
+
+.leaflet-pane.leaflet-overlay-pane > canvas { /*min to max lines*/
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+.modal.show{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.leaflet-top {
+  margin-top: 52px;
+}
+
+.leaflet-control-locate.leaflet-bar.leaflet-control a {
+  color: rgb(36, 36, 36);
+  font-size: 17px;
+}
+
+.leaflet-control-locate.leaflet-bar.leaflet-control.active a {
+  color: rgb(46, 194, 253);
+}
+
+.modal-header {
+  padding: 10px 20px;
+}
+
+.modal-footer {
+  padding: 5px 15px;
+}
+
+.leaflet-pm-toolbar .button-container a {
+  border-radius: 0!important;
+}
+
+.leaflet-pm-toolbar :first-child a {
+  border-top-left-radius: 2px!important;
+  border-top-right-radius: 2px!important;
+}
+
+.leaflet-pm-toolbar :last-child a {
+  border-bottom-left-radius: 2px!important;
+  border-bottom-right-radius: 2px!important;
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-flicker {
+  -webkit-animation: flickerAnimation 1s infinite;
+  -moz-animation: flickerAnimation 1s infinite;
+  -o-animation: flickerAnimation 1s infinite;
+  animation: flickerAnimation 1s infinite;
+}
